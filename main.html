@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a12f69c2ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main-styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body dir="rtl" class="main-body">
+    
+    <div class="top-container">
+        <h1 class="greeting">שלום [שם]!</h1>
+        <h3 class="greeting-message">מוכן ללימוד של היום?</h3>
+    </div>
 
+    <div class="page-wrapper">
+
+        <div class="main-content">
+            <!-- gotd - Goal Of The Day -->
+            <div class="gotd-container">
+                <p class="gotd-container__title">מטרת היום</p>
+                <p class="gotd-container__target">30 דקות</p>
+
+                <div class="gotd-container__progress-section">
+
+                    <div class="gotd-container__progress-bar">
+                        <div class="gotd-container__progress-bar-filled"></div>
+                    </div>
+
+                    <p class="gotd-container__progress-text">21 דקות הושלמו</p>
+                </div>
+            </div>
+
+            <div class="user-stats">
+
+                <!-- This is the user's level -->
+                <div class="user-level" tag="stats-container">
+                    <i class="user-level__icon fas fa-trophy"></i>
+                    <p class="user-level__level">רמה 4</p>
+                    
+                    <div class="user-level__progress-bar">
+                        <div class="user-level__progress-bar__filled" style="width: 75%;"></div>
+                    </div>
+                    <p tag="stat-description">61 נק' לסיום</p>
+                </div>
+                
+                <!-- This is the user's points overall -->
+                <div class ="user-points" tag="stats-container">
+                    <i class="user-points__icon fas fa-star"></i>
+                    <p tag="stat-description">סה"כ נקודות</p>
+                    <p class="user-points__points">1,200 נקודות</p>
+                </div>
+
+                <!-- This is the user's day-streak -->
+                <div class="user-streak" tag="stats-container">
+                    <i class="user-streak__icon fas fa-fire"></i>
+                    <p tag="stat-description">רצף יומי</p>
+                    <p class="user-streak__streak">5 ימים</p>
+                </div>
+            </div>
+
+            <!-- start lesson button -->
+            <button class="start-lesson-button">
+                <i class="fas fa-play start-lesson-button__icon"></i>
+                <span class="start-lesson-button__text">התחל שיעור</span>
+            </button>
+
+        </div>
+
+        <div class="separator"></div>
+        
+        <div class="left-column">
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        <span class="menu-text">בית</span>
+                        <i class="fas fa-home menu-icon"></i>
+                    </li>
+                    <li>
+                        <span class="menu-text">בית המדרש</span>
+                        <i class="fas fa-book menu-icon"></i>
+                    </li>
+                    <li>
+                        <span class="menu-text">התקדמות</span>
+                        <i class="fa-solid fa-chart-simple menu-icon"></i>
+                    </li>
+                    <li>
+                        <span class="menu-text">פרופיל</span>
+                        <i class="fa-solid fa-user menu-icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </div>
+
+</body>
+</html>
